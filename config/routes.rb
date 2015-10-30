@@ -1,5 +1,7 @@
 Quiz::Application.routes.draw do
-  root 'quizzes#index'
+  root 'customers#index'
+
+  resources :customers
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

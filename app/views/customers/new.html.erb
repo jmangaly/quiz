@@ -1,0 +1,8 @@
+<h1>Enter Your Customer Details Here </h1>
+<%= simple_form_for @customer do |f| %>
+  <%= f.input :name %>
+  <%= f.input :order %>
+  <%= f.input :phone %>
+  <%= f.submit 'Create', :class => 'btn btn-danger' %>
+<% end %>
+
