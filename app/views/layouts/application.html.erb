@@ -6,9 +6,17 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+<header>
+	<div>
+      <%= link_to 'New Customer Form', new_customer_path %>
+    </div>
+</header>
 <body>
 
 <%= yield %>
+<div>
+<%= yield :add_customer %>
+</div>
 
 </body>
 </html>
